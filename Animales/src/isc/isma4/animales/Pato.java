@@ -11,9 +11,23 @@ package isc.isma4.animales;
  */
 public abstract class Pato extends Animal{
     
-    public void habla(){
+    //public void habla(){
 
-        System.out.println("¡Cua! ¡Cua! ¡Cua!");
+    //    System.out.println("¡Cua! ¡Cua! ¡Cua!");
+    
+    
+    double Cua;
+     
+    public Pato (double Cua){
+        
+        this.Cua=Cua;
+    } 
+
+    @Override
+    public double getSonido() {
+        return Cua;
     }
     
-}
+    }
+    
+    

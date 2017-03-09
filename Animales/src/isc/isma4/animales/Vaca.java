@@ -9,11 +9,24 @@ package isc.isma4.animales;
  *
  * @author Alvarez
  */
-public abstract class Vaca extends Animal{
+public  class Vaca extends Animal{
     
-    public void habla(){
+    //public void habla(){
 
-        System.out.println("¡Muuuuuu!");
+      //  System.out.println("¡Muuuuuu!");
+    
+     double Muuuu;
+     
+    public Vaca (double Muuuu){
+        
+        this.Muuuu=Muuuu;
+    } 
+
+    @Override
+    public double getSonido() {
+        return Muuuu;
     }
     
-}
+    }
+    
+

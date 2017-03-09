@@ -11,9 +11,24 @@ package isc.isma4.animales;
  */
 public abstract class Pollo extends Animal {
     
-    public void habla(){
+    //public void habla(){
 
-        System.out.println("¡Pio! ¡Pio!");
+       // System.out.println("¡Pio! ¡Pio!");
+    
+    double Pio;
+    
+    public Pollo (double Pio) {
+        
+        this.Pio = Pio;
+    }
+    
+    @Override
+    public double getSonido() {
+        return Pio;
     }
     
 }
+        
+        
+        
+

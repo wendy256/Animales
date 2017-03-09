@@ -9,10 +9,9 @@ package isc.isma4.animales;
  *
  * @author Alvarez
  */
-    public abstract class Animal implements IAnimal{
-        
+public interface IAnimal {
     
+     public double getSonido();
+   // public abstract void habla();
     
 }
-    
-
